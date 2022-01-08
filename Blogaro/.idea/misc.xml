@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable-v24/ic_articles_selected.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable-v24/ic_menu_selected.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable-v24/ic_search_selected.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_articles.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_flame_state.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_home.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_home_selected.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_search.xml" value="0.2324074074074074" />
       </map>
     </option>
