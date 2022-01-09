@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -12,6 +14,7 @@ import com.google.android.material.navigation.NavigationBarView;
 public class MainDashboard extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
+    ImageView ivAddBlog;
 
     FragmentHome fragmentHome = new FragmentHome();
     FragmentArticles fragmentArticles = new FragmentArticles();
@@ -29,6 +32,17 @@ public class MainDashboard extends AppCompatActivity implements NavigationBarVie
 
         bottomNavigationView.setOnItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
+
+        ivAddBlog = findViewById(R.id.iv_addBlog);
+
+        ivAddBlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentAddBlog).commit();
+            }
+        });
+
+
 
     }
 

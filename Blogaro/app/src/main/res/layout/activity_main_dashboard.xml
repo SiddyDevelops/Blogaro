@@ -30,16 +30,18 @@
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/iv_add"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/iv_addBlog"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:padding="15dp"
+        android:clickable="true"
         android:src="@drawable/ic_plus"
         android:background="@drawable/bg_center_nav"
         app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="@string/bottom_sheet_behavior"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
