@@ -7,18 +7,27 @@
     android:background="@color/main_bg"
     tools:context=".MainDashboard">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_main"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:elevation="0dp"
-        app:itemIconSize="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/navigation_menu"/>
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:elevation="0dp"
+            app:itemIconSize="35dp"
+            app:itemTextColor="@color/menu_text_selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation_menu"/>
+
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/iv_add"
@@ -30,9 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="@string/bottom_sheet_behavior"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

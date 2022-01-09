@@ -4,12 +4,12 @@
     <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home_state"
-            android:title="" />
+            android:title="@string/home" />
 
     <item
         android:id="@+id/nav_articles"
         android:icon="@drawable/article_state"
-        android:title="" />
+        android:title="@string/article" />
 
     <item
         android:id="@+id/nav_addBlog"
@@ -19,11 +19,11 @@
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/search_state"
-        android:title="" />
+        android:title="@string/search" />
 
     <item
         android:id="@+id/nav_menu"
         android:icon="@drawable/menu_state"
-        android:title="" />
+        android:title="@string/menu" />
 
 </menu>

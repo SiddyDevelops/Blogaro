@@ -11,6 +11,7 @@
 <!--    Custom Colors-->
     <color name="blue">#376AED</color>
     <color name="main_bg">#E6EAF1</color>
+    <color name="grey">#C2C8D6</color>
 
 
 </resources>
