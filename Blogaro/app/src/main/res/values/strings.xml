@@ -10,4 +10,6 @@
     <string name="username">\@SiddyDevelops</string>
     <string name="siddharth_singh">Siddharth Singh</string>
     <string name="android_developer">Android Developer</string>
+    <string name="about_me">About Me</string>
+    <string name="about_us_text">Siddharth Singh is a tech enthusiast, with experience managing global teams. I\'m not a great programmer. I\'m just a good programmer with great habits. </string>
 </resources>
