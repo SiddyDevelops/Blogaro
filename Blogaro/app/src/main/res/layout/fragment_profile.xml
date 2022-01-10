@@ -163,7 +163,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="40dp"
                     android:fontFamily="@font/avenir_std_roman"
                     android:text="@string/about_us_text"
                     android:textColor="@color/black"
@@ -178,11 +178,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
         android:elevation="10dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toTopOf="@+id/cardView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -193,6 +194,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/postBTN"
                 android:layout_weight="1"
                 android:elevation="2dp"
                 app:cardBackgroundColor="@color/blue_on"
@@ -207,18 +209,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_std_black"
                         android:text="@string/post_count"
-                        android:fontFamily="@font/avenir_std_black"
-                        android:layout_gravity="center"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_std_book"
                         android:text="@string/post"
-                        android:fontFamily="@font/avenir_std_book"
-                        android:layout_gravity="center"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 
@@ -229,6 +231,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/followingBTN"
                 android:layout_weight="1"
                 android:elevation="2dp"
                 app:cardBackgroundColor="@color/blue_off"
@@ -243,18 +246,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_std_black"
                         android:text="@string/following_count"
-                        android:fontFamily="@font/avenir_std_black"
-                        android:layout_gravity="center"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/following"
-                        android:fontFamily="@font/avenir_std_book"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_std_book"
+                        android:text="@string/following"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 
@@ -265,6 +268,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/followersBTN"
                 android:layout_weight="1"
                 android:elevation="2dp"
                 app:cardBackgroundColor="@color/blue_off"
@@ -279,18 +283,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/followers_count"
-                        android:fontFamily="@font/avenir_std_black"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_std_black"
+                        android:text="@string/followers_count"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/followers"
-                        android:fontFamily="@font/avenir_std_book"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/avenir_std_book"
+                        android:text="@string/followers"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 

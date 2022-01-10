@@ -2,6 +2,7 @@ package com.siddydevelops.blogaro.NavFragments;
 
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -12,6 +13,10 @@ import com.siddydevelops.blogaro.R;
 
 public class FragmentProfile extends Fragment {
 
+    CardView postBTN;
+    CardView followingBTN;
+    CardView followersBTN;
+
     public FragmentProfile() {
         // Required empty public constructor
     }
@@ -21,5 +26,8 @@ public class FragmentProfile extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_profile, container, false);
+
+        postBTN = findViewById(R.id.postBTN);
+
     }
 }
