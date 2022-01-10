@@ -12,4 +12,10 @@
     <string name="android_developer">Android Developer</string>
     <string name="about_me">About Me</string>
     <string name="about_us_text">Siddharth Singh is a tech enthusiast, with experience managing global teams. I\'m not a great programmer. I\'m just a good programmer with great habits. </string>
+    <string name="followers">Followers</string>
+    <string name="followers_count">2.5K</string>
+    <string name="following">Following</string>
+    <string name="following_count">250</string>
+    <string name="post">Post</string>
+    <string name="post_count">52</string>
 </resources>

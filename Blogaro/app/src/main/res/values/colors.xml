@@ -8,12 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-<!--    Custom Colors-->
+<!--    Custom Colors -->
     <color name="blue">#376AED</color>
     <color name="main_bg">#E6EAF1</color>
     <color name="grey">#C2C8D6</color>
     <color name="dark_blue">#0D253C</color>
     <color name="dark_blue_text">#2D4379</color>
+
+    <!-- Button Switch color -->
+    <color name="blue_on">#2151CD</color>
+    <color name="blue_off">#386BED</color>
 
 
 </resources>
