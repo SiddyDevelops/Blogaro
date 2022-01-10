@@ -1,4 +1,4 @@
-package com.siddydevelops.blogaro;
+package com.siddydevelops.blogaro.NavFragments;
 
 import android.os.Bundle;
 
@@ -8,9 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentMenu extends Fragment {
+import com.siddydevelops.blogaro.R;
 
-    public FragmentMenu() {
+public class FragmentArticles extends Fragment {
+
+    public FragmentArticles() {
         // Required empty public constructor
     }
 
@@ -18,6 +20,6 @@ public class FragmentMenu extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        return inflater.inflate(R.layout.fragment_articles, container, false);
     }
 }

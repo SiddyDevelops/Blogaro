@@ -10,6 +10,11 @@ import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.siddydevelops.blogaro.NavFragments.FragmentAddBlog;
+import com.siddydevelops.blogaro.NavFragments.FragmentArticles;
+import com.siddydevelops.blogaro.NavFragments.FragmentHome;
+import com.siddydevelops.blogaro.NavFragments.FragmentProfile;
+import com.siddydevelops.blogaro.NavFragments.FragmentSearch;
 
 public class MainDashboard extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener {
 
@@ -20,7 +25,7 @@ public class MainDashboard extends AppCompatActivity implements NavigationBarVie
     FragmentArticles fragmentArticles = new FragmentArticles();
     FragmentAddBlog fragmentAddBlog = new FragmentAddBlog();
     FragmentSearch fragmentSearch = new FragmentSearch();
-    FragmentMenu fragmentMenu = new FragmentMenu();
+    FragmentProfile fragmentProfile = new FragmentProfile();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,8 +68,8 @@ public class MainDashboard extends AppCompatActivity implements NavigationBarVie
             case R.id.nav_search:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentSearch).commit();
                 return true;
-            case R.id.nav_menu:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentMenu).commit();
+            case R.id.nav_profile:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentProfile).commit();
                 return true;
         }
 
