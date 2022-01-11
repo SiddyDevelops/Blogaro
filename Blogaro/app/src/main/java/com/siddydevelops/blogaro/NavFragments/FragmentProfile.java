@@ -10,7 +10,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.LinearLayout;
 
+import com.siddydevelops.blogaro.BottomSheetDialog;
 import com.siddydevelops.blogaro.R;
 
 public class FragmentProfile extends Fragment {
@@ -53,6 +57,10 @@ public class FragmentProfile extends Fragment {
                 postBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
                 followingBTN.setBackgroundColor(getResources().getColor(R.color.blue_on));
                 followersBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
+
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog();
+
+                bottomSheetDialog.show(getActivity().getSupportFragmentManager(), "ModalBottomSheet");
             }
         });
 
