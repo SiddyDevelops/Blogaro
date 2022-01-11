@@ -41,21 +41,27 @@ public class FragmentProfile extends Fragment {
         postBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                postBTN.setBackgroundColor(getResources().getColor(R.color.blue_on));
+                followingBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
+                followersBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
             }
         });
 
         followingBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                postBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
+                followingBTN.setBackgroundColor(getResources().getColor(R.color.blue_on));
+                followersBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
             }
         });
 
         followersBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                postBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
+                followingBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
+                followersBTN.setBackgroundColor(getResources().getColor(R.color.blue_on));
             }
         });
 
