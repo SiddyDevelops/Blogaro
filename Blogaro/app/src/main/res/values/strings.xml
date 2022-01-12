@@ -18,4 +18,5 @@
     <string name="following_count">250</string>
     <string name="post">Post</string>
     <string name="post_count">52</string>
+    <string name="posts">Posts</string>
 </resources>
