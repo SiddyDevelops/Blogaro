@@ -1,7 +1,9 @@
 package com.siddydevelops.blogaro;
 
+import android.app.Dialog;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,5 +23,16 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
         View view = inflater.inflate(R.layout.profile_bottom_sheet,container,false);
         return view;
+    }
+
+    @NonNull
+    @Override
+    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+        //return super.onCreateDialog(savedInstanceState);
+        Dialog dialog = super.onCreateDialog(savedInstanceState);
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        return dialog;
     }
 }

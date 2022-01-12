@@ -1,5 +1,7 @@
 package com.siddydevelops.blogaro.NavFragments;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -59,7 +61,6 @@ public class FragmentProfile extends Fragment {
                 followersBTN.setBackgroundColor(getResources().getColor(R.color.blue_off));
 
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog();
-
                 bottomSheetDialog.show(getActivity().getSupportFragmentManager(), "ModalBottomSheet");
             }
         });
