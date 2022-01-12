@@ -27,4 +27,9 @@
         <item name="android:background">@drawable/top_rounded_corners</item>
     </style>
 
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/avenir_std_black</item>
+    </style>
+
 </resources>

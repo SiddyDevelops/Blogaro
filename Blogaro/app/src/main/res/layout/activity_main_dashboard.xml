@@ -25,6 +25,7 @@
             app:itemTextColor="@color/menu_text_selected"
             app:layout_constraintBottom_toBottomOf="parent"
             app:labelVisibilityMode="labeled"
+            android:theme="@style/Widget.BottomNavigationView"
             app:menu="@menu/navigation_menu"/>
 
     </FrameLayout>
