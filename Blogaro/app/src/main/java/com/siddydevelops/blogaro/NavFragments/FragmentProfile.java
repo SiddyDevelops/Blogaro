@@ -88,10 +88,4 @@ public class FragmentProfile extends Fragment {
         });
 
     }
-
-    public void openBottomSheet()
-    {
-
-    }
-
 }
