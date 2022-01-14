@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="8dp"
+        app:cardBackgroundColor="@color/main_bg"
         app:cardCornerRadius="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,6 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="2dp"
+                        app:cardBackgroundColor="@color/main_bg"
                         android:elevation="8dp"
                         app:cardCornerRadius="22dp"
                         app:contentPadding="5dp">
