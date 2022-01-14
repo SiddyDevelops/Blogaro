@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.siddydevelops.blogaro.RecyclerViewAdapters.FollRVAdapter;
 import com.siddydevelops.blogaro.RecyclerViewAdapters.ProfileRVAdapter;
 
 import java.util.Objects;
@@ -32,6 +33,10 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
     String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
     String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
+    String[] userID = {"@SiddyDevelops","@SiddyDevelops","@SiddyDevelops"};
+    String[] userName = {"Siddharth Singh","Siddharth Singh","Siddharth Singh"};
+    String[] userSpec = {"Android Developer","Android Developer","Android Developer"};
+
 
     @Nullable
     @Override
@@ -48,9 +53,11 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
                 break;
             case "BottomSheetPostFollowing":
                 bottomSheetHeading.setText(R.string.following);
+                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec));
                 break;
             case "BottomSheetFollowers":
                 bottomSheetHeading.setText(R.string.followers);
+                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec));
                 break;
             default:
                 bottomSheetHeading.setText(R.string.app_name);
