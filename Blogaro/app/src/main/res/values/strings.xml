@@ -24,4 +24,6 @@
     <string name="_1hr_ago">1hr ago</string>
     <string name="hi_siddharth">Hi, Siddharth!</string>
     <string name="explore_today_s">Explore today\'s</string>
+    <string name="search_for_latest_blogs_from_entering_keywords">Search for latest blogs by entering keywords...</string>
+    <string name="search_blogs">Search Blogs</string>
 </resources>
