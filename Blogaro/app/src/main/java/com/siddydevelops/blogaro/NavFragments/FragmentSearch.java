@@ -18,12 +18,9 @@ import com.siddydevelops.blogaro.R;
 public class FragmentSearch extends Fragment {
 
     ListView searchListView;
-    String tutorials[]
-            = { "Algorithms", "Data Structures",
-            "Languages", "Interview Corner",
-            "GATE", "ISRO CS",
-            "UGC NET CS", "CS Subjects",
-            "Web Technologies" };
+    String[] searchLV
+            = { "Trending", "Most Read", "Machine Learning", "AI", "Data Structures",
+            "Android Apps", "Figma", "Innovation" };
 
     public FragmentSearch() {
         // Required empty public constructor
@@ -41,7 +38,7 @@ public class FragmentSearch extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         searchListView = view.findViewById(R.id.searchListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),R.layout.list_view_item,tutorials);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),R.layout.list_view_item,searchLV);
         searchListView.setAdapter(arrayAdapter);
 
     }
