@@ -28,12 +28,6 @@ public class FragmentProfile extends Fragment {
     CardView followingBTN;
     CardView followersBTN;
 
-//    RecyclerView programingList = findViewById(R.id.programingList);
-//
-//        programingList.setLayoutManager(new LinearLayoutManager(this));
-//    String[] languages = {"Java","JavaScript","C#","PHP","C","C++","Python","Java","JavaScript","C#","PHP","C","C++","Python"};
-//        programingList.setAdapter(new RecyclerviewAdapter(languages));
-
     public FragmentProfile() {
         // Required empty public constructor
     }
