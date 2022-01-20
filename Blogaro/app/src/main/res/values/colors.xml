@@ -14,6 +14,7 @@
     <color name="grey">#C2C8D6</color>
     <color name="dark_blue">#0D253C</color>
     <color name="dark_blue_text">#2D4379</color>
+    <color name="light_text">#7B8BB2</color>
 
     <!-- Button Switch color -->
     <color name="blue_on">#2151CD</color>
