@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
     android:background="@color/main_bg">
 
     <TextView
@@ -14,7 +15,7 @@
         android:fontFamily="@font/metropolis_bold"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Four Things Every Woman Needs To Know"
+        android:text="@string/blog_heading_buffer"
         android:textColor="@color/dark_blue"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,12 +86,38 @@
     </LinearLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
         android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/blog_cover"
-        app:shapeAppearanceOverlay="@style/ImageView.Corner"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:shapeAppearanceOverlay="@style/ImageView.Corner" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/metropolis_bold"
+        android:text="@string/blog_subHeading_buffer"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/blog_text_buffer"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
