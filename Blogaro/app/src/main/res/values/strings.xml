@@ -27,4 +27,6 @@
     <string name="search_for_latest_blogs_from_entering_keywords">Search for latest blogs by entering keywords...</string>
     <string name="search_blogs">Search Blogs</string>
     <string name="recent_searches">Recent Searches</string>
+    <string name="dev_info">Designed and Developed By Siddharth Singh.\n@SiddyDevelops</string>
+    <string name="catch_the_latest_blog_posts_here">Catch the latest Blog-Posts here:</string>
 </resources>
