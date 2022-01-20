@@ -32,4 +32,12 @@
         <item name="fontFamily">@font/avenir_std_black</item>
     </style>
 
+    <style name="ImageView.Corner" parent="">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
 </resources>

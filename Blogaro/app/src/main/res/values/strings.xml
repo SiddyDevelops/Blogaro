@@ -29,4 +29,7 @@
     <string name="recent_searches">Recent Searches</string>
     <string name="dev_info">Designed and Developed By Siddharth Singh.\n@SiddyDevelops</string>
     <string name="catch_the_latest_blog_posts_here">Catch the latest Blog-Posts here:</string>
+    <string name="blog_text_buffer">What makes an android app complete? Implementing functionalities, view, activities, using databases, adding animations, adding the perfect theme to go with the app, etc. might be the answer. But as developers, we always forget about one important thing, the first impression, i.e. Splash Screen. Even though some of us remember to implement it, we don’t like how a short-bright-white-screen ruins the splash screen, whenever we launch an android app. Have you ever wondered, why this white screen appears before the Splash-Screen?</string>
+    <string name="blog_heading_buffer">Android Cold Start and Buffer Screen</string>
+    <string name="blog_subHeading_buffer">Create an efficient splash screen</string>
 </resources>
