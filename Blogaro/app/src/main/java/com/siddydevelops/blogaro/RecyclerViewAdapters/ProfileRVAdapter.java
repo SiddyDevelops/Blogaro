@@ -24,8 +24,8 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
     @NonNull
     @Override
     public ProfileRVAdapter.ProfileViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater =LayoutInflater.from(parent.getContext());
-        View view= inflater.inflate(R.layout.profile_rv_item_layout, parent,false);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.profile_rv_item_layout, parent,false);
         return new ProfileViewHolder(view);
     }
 
