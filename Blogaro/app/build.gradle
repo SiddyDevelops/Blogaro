@@ -40,4 +40,7 @@ dependencies {
     //Insta-Story Viewer
     implementation 'com.github.bxute:StoryView:v1.0'
 
+    //Circular-Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }
