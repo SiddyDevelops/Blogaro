@@ -33,8 +33,8 @@
     </style>
 
     <style name="ImageView.Corner" parent="">
-        <item name="cornerSizeTopRight">40dp</item>
-        <item name="cornerSizeTopLeft">40dp</item>
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeTopLeft">30dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerFamily">rounded</item>

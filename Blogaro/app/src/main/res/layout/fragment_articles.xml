@@ -19,6 +19,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/avenir_std_black"
+        android:textColor="@color/blue"
+        android:text="Catch the latest blog posts here"
+        app:layout_constraintBottom_toBottomOf="@+id/backIV"
+        app:layout_constraintStart_toEndOf="@+id/backIV"
+        app:layout_constraintTop_toTopOf="@+id/backIV" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/blogRecyclerView"
         android:layout_marginTop="5dp"

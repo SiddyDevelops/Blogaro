@@ -48,11 +48,10 @@ public class BlogRVAdapter extends RecyclerView.Adapter<BlogRVAdapter.BlogViewHo
         holder.likeBlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                holder.likeBlog.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_likeblog_selected, 0, 0, 0);
-//                if (holder.likeBlog.getBackground().getConstantState() == getResources().getDrawable(R.drawable.ic_likeblog_selected).getConstantState())
-//                {
-//                    holder.likeBlog.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_likeblog, 0, 0, 0);
-//                }
+                if(view.isActivated())
+                    view.setActivated(false);
+                else
+                    view.setActivated(true);
             }
         });
 

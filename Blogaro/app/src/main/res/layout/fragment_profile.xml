@@ -314,7 +314,7 @@
         android:fontFamily="@font/avenir_std_book"
         android:gravity="center"
         android:text="@string/dev_info"
-        android:textColor="#E64556"
+        android:textColor="#7B8BB2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
