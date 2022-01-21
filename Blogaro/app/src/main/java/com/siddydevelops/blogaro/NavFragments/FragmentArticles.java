@@ -1,6 +1,7 @@
 package com.siddydevelops.blogaro.NavFragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,17 +13,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.siddydevelops.blogaro.MainDashboard;
 import com.siddydevelops.blogaro.R;
 import com.siddydevelops.blogaro.RecyclerViewAdapters.BlogRVAdapter;
 
 public class FragmentArticles extends Fragment {
 
     Context context;
-
+    ImageView backIV;
     RecyclerView blogRecyclerView;
-    String[] heading = {"Heading","Heading","Heading"};
-    String[] subHeading = {"SubHeading","SubHeading","SubHeading"};
+    String[] heading = {"Android Cold Start and Buffer Screen","Android Cold Start and Buffer Screen","Android Cold Start and Buffer Screen"};
+    String[] subHeading = {"Create an efficient splash screen","Create an efficient splash screen","Create an efficient splash screen"};
 
     public FragmentArticles() {
         // Required empty public constructor
@@ -39,7 +42,17 @@ public class FragmentArticles extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         blogRecyclerView = view.findViewById(R.id.blogRecyclerView);
+        backIV = view.findViewById(R.id.backIV);
+
         blogRecyclerView.setLayoutManager(new LinearLayoutManager(context));
         blogRecyclerView.setAdapter(new BlogRVAdapter(heading,subHeading));
+
+        backIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainDashboard.class);
+                startActivity(intent);
+            }
+        });
     }
 }

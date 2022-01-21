@@ -61,6 +61,8 @@ public class MainDashboard extends AppCompatActivity implements NavigationBarVie
                 return true;
             case R.id.nav_articles:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentArticles).commit();
+                bottomNavigationView.setVisibility(View.GONE);
+                ivAddBlog.setVisibility(View.GONE);
                 return true;
             case R.id.nav_addBlog:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentAddBlog).commit();

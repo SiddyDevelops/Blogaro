@@ -3,6 +3,8 @@ package com.siddydevelops.blogaro.RecyclerViewAdapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,6 +34,28 @@ public class BlogRVAdapter extends RecyclerView.Adapter<BlogRVAdapter.BlogViewHo
     public void onBindViewHolder(@NonNull BlogRVAdapter.BlogViewHolder holder, int position) {
         holder.blogHeading.setText(heading[position]);
         holder.blogSubHeading.setText(subHeading[position]);
+
+        holder.bookmarkIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(view.isActivated())
+                    view.setActivated(false);
+                else
+                    view.setActivated(true);
+            }
+        });
+
+        holder.likeBlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.likeBlog.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_likeblog_selected, 0, 0, 0);
+//                if (holder.likeBlog.getBackground().getConstantState() == getResources().getDrawable(R.drawable.ic_likeblog_selected).getConstantState())
+//                {
+//                    holder.likeBlog.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_likeblog, 0, 0, 0);
+//                }
+            }
+        });
+
     }
 
     @Override
@@ -43,11 +67,15 @@ public class BlogRVAdapter extends RecyclerView.Adapter<BlogRVAdapter.BlogViewHo
     {
         TextView blogHeading;
         TextView blogSubHeading;
+        ImageView bookmarkIV;
+        Button likeBlog;
 
         public BlogViewHolder(@NonNull View itemView) {
             super(itemView);
             blogHeading = itemView.findViewById(R.id.blogHeading);
             blogSubHeading = itemView.findViewById(R.id.blogSubHeading);
+            bookmarkIV = itemView.findViewById(R.id.bookmarkIV);
+            likeBlog = itemView.findViewById(R.id.likeBlogButton);
         }
     }
 
