@@ -26,7 +26,7 @@
         android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +34,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/me_photo"
             app:civ_border_color="@color/white"
             app:civ_border_width="2dp" />
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -79,8 +79,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/bookmarkIV"
             android:layout_gravity="center"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="5dp"
             android:src="@drawable/bookmark_state" />
 
     </LinearLayout>
@@ -88,7 +89,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="230dp"
         android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
         android:src="@drawable/blog_cover"
@@ -100,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/metropolis_bold"
         android:text="@string/blog_subHeading_buffer"
         android:textColor="@color/dark_blue"
@@ -126,11 +127,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/likeBlogButton"
         android:padding="10dp"
         android:layout_marginEnd="32dp"
         android:clickable="true"
         android:focusable="true"
-        android:drawableLeft="@drawable/ic_like_blog"
+        android:drawableLeft="@drawable/ic_likeblog"
         android:text="@string/like_count"
         android:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"

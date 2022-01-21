@@ -7,7 +7,7 @@
     tools:context=".NavFragments.FragmentArticles">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/backIV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -22,8 +22,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/blogRecyclerView"
         android:layout_marginTop="5dp"
+        android:paddingBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/backIV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
