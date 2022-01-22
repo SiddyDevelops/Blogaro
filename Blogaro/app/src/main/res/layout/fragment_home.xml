@@ -48,11 +48,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/topicRecyclerView"
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/discreteSV"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        app:dsv_orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />

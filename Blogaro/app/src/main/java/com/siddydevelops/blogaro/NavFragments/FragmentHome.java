@@ -6,25 +6,24 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mig35.carousellayoutmanager.CarouselLayoutManager;
-import com.mig35.carousellayoutmanager.CarouselZoomPostLayoutListener;
-import com.mig35.carousellayoutmanager.CenterScrollListener;
 import com.siddydevelops.blogaro.R;
-import com.siddydevelops.blogaro.RecyclerViewAdapters.BlogRVAdapter;
 import com.siddydevelops.blogaro.RecyclerViewAdapters.TopicRVAdapter;
+import com.yarolegovich.discretescrollview.DiscreteScrollView;
+import com.yarolegovich.discretescrollview.transform.Pivot;
+import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
 public class FragmentHome extends Fragment {
 
     RecyclerView topicRecyclerView;
-    String[] topicText = {"Technology","Technology","Technology"};
+    String[] topicText = {"Technology","Science","Medicine","Education","Entertainment","Sports"};
     Context context;
+    DiscreteScrollView scrollView;
 
     public FragmentHome() {
         // Required empty public constructor
@@ -41,17 +40,16 @@ public class FragmentHome extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        topicRecyclerView = view.findViewById(R.id.topicRecyclerView);
+        //topicRecyclerView = view.findViewById(R.id.topicRecyclerView);
+        scrollView = view.findViewById(R.id.discreteSV);
 
-        final CarouselLayoutManager layoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL, true);
-        layoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
-        topicRecyclerView.setLayoutManager(layoutManager);
-        topicRecyclerView.setHasFixedSize(true);
-        topicRecyclerView.setAdapter(new TopicRVAdapter(topicText));
-        topicRecyclerView.addOnScrollListener(new CenterScrollListener());
+        scrollView.setItemTransformer(new ScaleTransformer.Builder()
+                .setMaxScale(1.0f)
+                .setMinScale(0.8f)
+                .setPivotX(Pivot.X.CENTER) // CENTER is a default one
+                .setPivotY(Pivot.Y.BOTTOM) // CENTER is a default one
+                .build());
 
-//        topicRecyclerView.setLayoutManager(new LinearLayoutManager(context));
-//        topicRecyclerView.setAdapter(new TopicRVAdapter(topicText));
-
+        scrollView.setAdapter(new TopicRVAdapter(topicText));
     }
 }
