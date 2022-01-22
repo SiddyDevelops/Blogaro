@@ -1,5 +1,6 @@
 package com.siddydevelops.blogaro.RecyclerViewAdapters;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.siddydevelops.blogaro.R;
@@ -15,10 +17,12 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
 
     private String[] titles;
     private String[] subTitles;
+    private int CV_LAYOUT;
 
-    public ProfileRVAdapter(String[] titles, String[] subTitles) {
+    public ProfileRVAdapter(String[] titles, String[] subTitles, int CV_LAYOUT) {
         this.titles = titles;
         this.subTitles = subTitles;
+        this.CV_LAYOUT = CV_LAYOUT;
     }
 
     @NonNull
@@ -43,6 +47,12 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
                     view.setActivated(true);
             }
         });
+
+        if(CV_LAYOUT == 1)
+        {
+            holder.layoutCV.setBackgroundColor(Color.WHITE);
+        }
+
     }
 
     @Override
@@ -55,6 +65,7 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
         TextView title;
         TextView subTitle;
         ImageView bookmarkIV;
+        CardView layoutCV;
 
         public ProfileViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,7 +73,7 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
             title = itemView.findViewById(R.id.title);
             subTitle = itemView.findViewById(R.id.subTitle);
             bookmarkIV = itemView.findViewById(R.id.bookmarkIV);
-
+            layoutCV = itemView.findViewById(R.id.layoutCV);
         }
     }
 }
