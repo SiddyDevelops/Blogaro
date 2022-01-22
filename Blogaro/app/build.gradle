@@ -44,6 +44,6 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     //LayoutManager_RV_Carousel
-    implementation 'com.mig35:carousellayoutmanager:1.4.6'
+    implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
 
 }
