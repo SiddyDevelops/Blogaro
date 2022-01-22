@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.siddydevelops.blogaro.R;
 import com.siddydevelops.blogaro.RecyclerViewAdapters.ProfileRVAdapter;
@@ -26,6 +27,8 @@ public class FragmentHome extends Fragment {
     String[] topicText = {"Technology","Science","Medicine","Education","News","Sports"};
     String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
     String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
+
+    ImageView iv_addBlog;
 
     Context context;
     DiscreteScrollView scrollView;
@@ -44,6 +47,10 @@ public class FragmentHome extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        iv_addBlog = getActivity().findViewById(R.id.iv_addBlog);
+        iv_addBlog.setImageDrawable(getResources().getDrawable(R.drawable.ic_plus));
+        iv_addBlog.setBackgroundResource(R.drawable.bg_center_nav);
 
         blogsRVHome = view.findViewById(R.id.blogsRVHome);
         scrollView = view.findViewById(R.id.discreteSV);
