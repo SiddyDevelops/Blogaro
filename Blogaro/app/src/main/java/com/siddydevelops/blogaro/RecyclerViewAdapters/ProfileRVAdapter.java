@@ -50,7 +50,7 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
 
         if(CV_LAYOUT == 1)
         {
-            holder.layoutCV.setBackgroundColor(Color.WHITE);
+            holder.layoutCV.setCardBackgroundColor(Color.WHITE);
         }
 
     }

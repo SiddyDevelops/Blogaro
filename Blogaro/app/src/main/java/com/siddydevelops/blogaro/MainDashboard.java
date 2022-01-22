@@ -2,7 +2,9 @@ package com.siddydevelops.blogaro;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,10 +46,10 @@ public class MainDashboard extends AppCompatActivity implements NavigationBarVie
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentAddBlog).commit();
+                ivAddBlog.setImageDrawable(getResources().getDrawable(R.drawable.ic_multiply));
+                ivAddBlog.setBackgroundResource(R.drawable.bg_center_nav_2);
             }
         });
-
-
 
     }
 
@@ -63,15 +65,23 @@ public class MainDashboard extends AppCompatActivity implements NavigationBarVie
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentArticles).commit();
                 bottomNavigationView.setVisibility(View.GONE);
                 ivAddBlog.setVisibility(View.GONE);
+                ivAddBlog.setImageDrawable(getResources().getDrawable(R.drawable.ic_plus));
+                ivAddBlog.setBackgroundResource(R.drawable.bg_center_nav);
                 return true;
             case R.id.nav_addBlog:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentAddBlog).commit();
+                ivAddBlog.setImageDrawable(getResources().getDrawable(R.drawable.ic_multiply));
+                ivAddBlog.setBackgroundResource(R.drawable.bg_center_nav_2);
                 return true;
             case R.id.nav_search:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentSearch).commit();
+                ivAddBlog.setImageDrawable(getResources().getDrawable(R.drawable.ic_plus));
+                ivAddBlog.setBackgroundResource(R.drawable.bg_center_nav);
                 return true;
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentProfile).commit();
+                ivAddBlog.setImageDrawable(getResources().getDrawable(R.drawable.ic_plus));
+                ivAddBlog.setBackgroundResource(R.drawable.bg_center_nav);
                 return true;
         }
 
