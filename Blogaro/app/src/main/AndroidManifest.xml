@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Blogaro">
         <activity
-            android:name=".MainDashboard"
-            android:exported="true">
+            android:name=".SplashScreenActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainDashboard"
+            android:exported="true">
         </activity>
     </application>
 
