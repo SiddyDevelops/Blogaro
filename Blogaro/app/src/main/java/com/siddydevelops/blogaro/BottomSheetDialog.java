@@ -49,7 +49,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
         switch(Objects.requireNonNull(getTag())) {
             case "BottomSheetPost":
                 bottomSheetHeading.setText(R.string.post);
-                profile_rv.setAdapter(new ProfileRVAdapter(titles, subTitles));
+                profile_rv.setAdapter(new ProfileRVAdapter(titles, subTitles,0));
                 break;
             case "BottomSheetPostFollowing":
                 bottomSheetHeading.setText(R.string.following);

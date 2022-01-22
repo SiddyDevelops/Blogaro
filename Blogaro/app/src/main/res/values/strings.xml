@@ -33,4 +33,6 @@
     <string name="blog_heading_buffer">Android Cold Start and Buffer Screen</string>
     <string name="blog_subHeading_buffer">Create an efficient splash screen</string>
     <string name="technology">Technology</string>
+    <string name="view_more">View More</string>
+    <string name="blogs_from_your_feed">Latest Blogs</string>
 </resources>
