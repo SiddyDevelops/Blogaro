@@ -20,8 +20,7 @@ import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
 public class FragmentHome extends Fragment {
 
-    RecyclerView topicRecyclerView;
-    String[] topicText = {"Technology","Science","Medicine","Education","Entertainment","Sports"};
+    String[] topicText = {"Technology","Science","Medicine","Education","News","Sports"};
     Context context;
     DiscreteScrollView scrollView;
 
@@ -40,7 +39,6 @@ public class FragmentHome extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //topicRecyclerView = view.findViewById(R.id.topicRecyclerView);
         scrollView = view.findViewById(R.id.discreteSV);
 
         scrollView.setItemTransformer(new ScaleTransformer.Builder()
@@ -49,7 +47,7 @@ public class FragmentHome extends Fragment {
                 .setPivotX(Pivot.X.CENTER) // CENTER is a default one
                 .setPivotY(Pivot.Y.BOTTOM) // CENTER is a default one
                 .build());
-
-        scrollView.setAdapter(new TopicRVAdapter(topicText));
+        scrollView.setAdapter(new TopicRVAdapter(topicText,scrollView));
+        //scrollView.smoothScrollToPosition(3);
     }
 }
