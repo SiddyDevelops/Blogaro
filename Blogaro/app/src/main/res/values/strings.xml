@@ -37,4 +37,7 @@
     <string name="blogs_from_your_feed">Latest Blogs</string>
     <string name="technical_practical_theoretically_interesting">Technical…Practical…Theoretically Interesting</string>
     <string name="new_article">New Article</string>
+    <string name="add_subtitle_for_your_article">Add subtitle for your article</string>
+    <string name="add_title_for_your_article">Add title for your article</string>
+    <string name="add_content_for_your_article">Add content for your article</string>
 </resources>
