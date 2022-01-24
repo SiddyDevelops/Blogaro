@@ -100,12 +100,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="480dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="410dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="65dp"
         android:background="@drawable/search_bg"
         android:fontFamily="@font/avenir_std_book"
         android:gravity="start"
@@ -115,8 +115,78 @@
         android:textColor="@color/dark_blue_text"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tagChip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit_section"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_upload"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/bg_image_edit_section"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/circular_item_background_selector"
+            android:src="@drawable/ic_image"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/circular_item_background_selector"
+            android:src="@drawable/ic_play"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/circular_item_background_selector"
+            android:src="@drawable/ic_align"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/circular_item_background_selector"
+            android:src="@drawable/ic_link"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/circular_item_background_selector"
+            android:src="@drawable/ic_scale"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

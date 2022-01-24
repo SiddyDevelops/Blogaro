@@ -13,12 +13,16 @@
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable-v24/ic_profile_selected.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable-v24/ic_search_selected.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/article_state.xml" value="0.22777777777777777" />
-        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bg_center_nav.xml" value="0.22777777777777777" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bg_center_nav.xml" value="0.136" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bg_edit_section.xml" value="0.1597222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bg_gradient.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bg_image_edit_section.xml" value="0.1597222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bg_tag_chip.xml" value="0.2175925925925926" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/bookmark_state.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/circular_item_background_selector.xml" value="0.1597222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/home_state.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_articles.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.1763888888888889" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_book_open_solid.xml" value="0.2175925925925926" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_bookmark.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_bookmark_selected.xml" value="0.19814814814814816" />
@@ -32,12 +36,14 @@
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_likeblog.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_logout.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_menu.xml" value="0.22777777777777777" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_picture.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_plus.xml" value="0.26458333333333334" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_profile.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_search.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_send.xml" value="0.26458333333333334" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_send_svgrepo_com.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_splash.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/ic_upload.xml" value="0.1597222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/like_blog_state.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/menu_state.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/menu_text_selected.xml" value="0.2175925925925926" />
@@ -48,10 +54,10 @@
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/search_bg.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/search_state.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/drawable/top_rounded_corners.xml" value="0.19814814814814816" />
-        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/activity_main_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/activity_main_dashboard.xml" value="0.176" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/activity_splash_screen.xml" value="0.2484375" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/article_item_layout.xml" value="0.264" />
-        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_add_blog.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_add_blog.xml" value="0.176" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_articles.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_home.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_menu.xml" value="0.19814814814814816" />
