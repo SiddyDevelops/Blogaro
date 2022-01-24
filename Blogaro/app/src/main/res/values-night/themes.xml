@@ -40,4 +40,8 @@
         <item name="cornerFamily">rounded</item>
     </style>
 
+    <style name="ChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
 </resources>

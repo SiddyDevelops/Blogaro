@@ -46,4 +46,7 @@ dependencies {
     //LayoutManager_RV_Carousel
     implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
 
+    //TagChip
+    implementation "com.hootsuite.android:nachos:1.1.1"
+
 }
