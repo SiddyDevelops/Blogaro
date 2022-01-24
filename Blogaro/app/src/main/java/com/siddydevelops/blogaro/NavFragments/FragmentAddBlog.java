@@ -51,7 +51,7 @@ public class FragmentAddBlog extends Fragment {
         });
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_dropdown_item_1line, suggestions);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.suggestion_chip, suggestions);
 
         tagChip = view.findViewById(R.id.tagChip);
         tagChip.setAdapter(adapter);

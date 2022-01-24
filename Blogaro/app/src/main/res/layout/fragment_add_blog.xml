@@ -74,7 +74,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/avenir_std_book"
-        android:text="Add Tags"
+        android:text="@string/add_tags"
         android:textColor="@color/blue"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         android:textColor="@color/blue"
         app:chipBackground="@color/blue"
         android:hint="@string/enter_tags"
-        app:chipTextSize="18sp"
+        app:chipTextSize="15sp"
         android:textSize="18sp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -101,9 +101,11 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="65dp"
         android:background="@drawable/search_bg"
         android:fontFamily="@font/avenir_std_book"
         android:gravity="start"
@@ -112,11 +114,9 @@
         android:scrollbars="vertical"
         android:textColor="@color/dark_blue_text"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tagChip" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
