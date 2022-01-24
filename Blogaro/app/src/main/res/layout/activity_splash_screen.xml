@@ -14,7 +14,7 @@
         android:src="@drawable/ic_splash" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_splash"
@@ -33,6 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/taglineTextView"
         android:layout_marginTop="280dp"
         android:text="@string/technical_practical_theoretically_interesting"
         android:fontFamily="@font/gloria_hallelujah_regular"
@@ -41,6 +42,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
