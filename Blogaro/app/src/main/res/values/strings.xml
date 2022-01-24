@@ -40,4 +40,5 @@
     <string name="add_subtitle_for_your_article">Add subtitle for your article</string>
     <string name="add_title_for_your_article">Add title for your article</string>
     <string name="add_content_for_your_article">Add content for your article</string>
+    <string name="enter_tags">Enter tags</string>
 </resources>
