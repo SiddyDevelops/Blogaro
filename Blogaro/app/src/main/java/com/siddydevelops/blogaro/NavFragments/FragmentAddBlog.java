@@ -1,5 +1,6 @@
 package com.siddydevelops.blogaro.NavFragments;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,14 +11,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-
+import com.hootsuite.nachos.NachoTextView;
+import com.hootsuite.nachos.terminator.ChipTerminatorHandler;
 import com.siddydevelops.blogaro.MainDashboard;
 import com.siddydevelops.blogaro.R;
 
 public class FragmentAddBlog extends Fragment {
 
     ImageView iv_addBlog;
+    NachoTextView tagChip;
+
+    String[] suggestions = new String[]{"Tortilla Chips", "Melted Cheese", "Salsa", "Guacamole", "Mexico", "Jalapeno"};
 
     public FragmentAddBlog() {
         // Required empty public constructor
@@ -42,6 +48,13 @@ public class FragmentAddBlog extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_dropdown_item_1line, suggestions);
+
+        tagChip = view.findViewById(R.id.tagChip);
+        tagChip.setAdapter(adapter);
+        tagChip.addChipTerminator(' ', ChipTerminatorHandler.BEHAVIOR_CHIPIFY_TO_TERMINATOR);
 
     }
 }
