@@ -2,6 +2,7 @@ package com.siddydevelops.blogaro.NavFragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -23,7 +24,7 @@ public class FragmentAddBlog extends Fragment {
     ImageView iv_addBlog;
     NachoTextView tagChip;
 
-    String[] suggestions = new String[]{"Tortilla Chips", "Melted Cheese", "Salsa", "Guacamole", "Mexico", "Jalapeno"};
+    String[] suggestions = new String[]{"Lifestyle", "ML", "WebDev", "Android", "Sports", "Technology","Art","Design","Culture","Production"};
 
     public FragmentAddBlog() {
         // Required empty public constructor
@@ -54,7 +55,9 @@ public class FragmentAddBlog extends Fragment {
 
         tagChip = view.findViewById(R.id.tagChip);
         tagChip.setAdapter(adapter);
+        tagChip.setChipTextColor(Color.WHITE);
         tagChip.addChipTerminator(' ', ChipTerminatorHandler.BEHAVIOR_CHIPIFY_TO_TERMINATOR);
 
     }
+
 }
