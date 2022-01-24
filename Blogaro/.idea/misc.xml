@@ -51,7 +51,7 @@
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/activity_main_dashboard.xml" value="0.264" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/activity_splash_screen.xml" value="0.2484375" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/article_item_layout.xml" value="0.264" />
-        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_add_blog.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_add_blog.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_articles.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_home.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/fragment_menu.xml" value="0.19814814814814816" />
@@ -61,9 +61,11 @@
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/profile_bottom_sheet.xml" value="0.264" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/profile_foll_rv_item.xml" value="0.4" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/profile_rv_item_layout.xml" value="0.4" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/suggestion_chip.xml" value="0.2" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/layout/topic_item_layout.xml" value="0.24461538461538462" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/menu/navigation_menu.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/xml/chips.xml" value="0.24461538461538462" />
+        <entry key="..\:/Users/siddh/OneDrive/Desktop/Blogaro/Blogaro/app/src/main/res/xml/suggestions_tag.xml" value="0.22592592592592592" />
       </map>
     </option>
   </component>
