@@ -42,4 +42,6 @@
     <string name="add_content_for_your_article">Add content for your article</string>
     <string name="enter_tags">Enter tags</string>
     <string name="add_tags">Add Tags</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">SIGN UP</string>
 </resources>
