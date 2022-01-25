@@ -44,4 +44,11 @@
     <string name="add_tags">Add Tags</string>
     <string name="login">LOGIN</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_with_your_account">Sign in with your account</string>
+    <string name="username01">Username</string>
+    <string name="enter_usename_here">Enter Usename Here</string>
+    <string name="password_reset">Forgot your password? <font color='#376AED'>Reset here</font></string>
+    <string name="t_c">Read Terms and Conditions</string>
+    <string name="sign_in_with">OR SIGN IN WITH</string>
 </resources>
