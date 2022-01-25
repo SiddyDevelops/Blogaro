@@ -26,6 +26,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/loginTV"
                 android:layout_weight="1"
                 android:fontFamily="@font/metropolis_bold"
                 android:gravity="center"
@@ -36,6 +37,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/sigupTV"
                 android:layout_weight="1"
                 android:fontFamily="@font/metropolis_bold"
                 android:gravity="center"
@@ -61,6 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/headingTV"
             android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"
             android:text="@string/welcome_back"
@@ -71,6 +74,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/subHeadingTV"
             android:layout_marginStart="30dp"
             android:text="@string/sign_in_with_your_account"
             android:fontFamily="@font/avenir_std_roman"
@@ -104,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="35dp"
-            android:text="Password"
+            android:text="@string/password"
             android:fontFamily="@font/avenir_std_book"
             android:textColor="@color/splash_text_blue"
             android:textSize="20sp"/>
@@ -116,7 +120,33 @@
             android:layout_marginEnd="30dp"
             android:layout_marginTop="0dp"
             android:backgroundTint="@color/dark_blue_text"
-            android:hint="@string/enter_usename_here"
+            android:hint="@string/enter_password_here"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:textColor="@color/dark_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPassTV"
+            android:visibility="gone"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/confirm_password"
+            android:fontFamily="@font/avenir_std_book"
+            android:textColor="@color/splash_text_blue"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPassET"
+            android:visibility="gone"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/dark_blue_text"
+            android:hint="Re-Enter Password Here"
             android:includeFontPadding="false"
             android:inputType="textPassword"
             android:textColor="@color/dark_blue"/>
@@ -138,6 +168,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/forgetPassTV"
             android:layout_marginTop="5dp"
             android:layout_gravity="center"
             android:text="@string/password_reset"
@@ -148,6 +179,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/or_signupTV"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:text="@string/sign_in_with"
@@ -195,6 +227,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/tcTV"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="100dp"
             android:layout_gravity="center"

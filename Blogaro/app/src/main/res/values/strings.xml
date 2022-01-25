@@ -51,4 +51,7 @@
     <string name="password_reset">Forgot your password? <font color='#376AED'>Reset here</font></string>
     <string name="t_c">Read Terms and Conditions</string>
     <string name="sign_in_with">OR SIGN IN WITH</string>
+    <string name="enter_password_here">Enter Password Here</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
 </resources>
