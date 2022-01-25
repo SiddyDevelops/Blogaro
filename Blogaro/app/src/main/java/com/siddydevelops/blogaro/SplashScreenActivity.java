@@ -1,6 +1,7 @@
 package com.siddydevelops.blogaro;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
@@ -22,6 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Blogaro_splash);
         setContentView(R.layout.activity_splash_screen);
 
         taglineTV = findViewById(R.id.taglineTextView);
@@ -35,14 +37,12 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-//                Intent intent = new Intent(getApplicationContext(), MainDashboard.class);
-//                startActivity(intent);
-//                finish();
 
                 tittleTV.animate().y(30f).setDuration(2000);
                 taglineTV.setVisibility(View.GONE);
 
                 BottomSheetDialogSplash bottomSheetDialogSplash = new BottomSheetDialogSplash();
+                bottomSheetDialogSplash.setCancelable(false);
                 bottomSheetDialogSplash.show(getSupportFragmentManager(),"BottomSheetDialogSplash");
 
             }
