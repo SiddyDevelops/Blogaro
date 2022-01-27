@@ -38,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
 
-                tittleTV.animate().y(30f).setDuration(2000);
+                tittleTV.animate().y(30f).setDuration(1000);
                 taglineTV.setVisibility(View.GONE);
 
                 BottomSheetDialogSplash bottomSheetDialogSplash = new BottomSheetDialogSplash();
