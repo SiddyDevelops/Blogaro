@@ -33,10 +33,16 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
     String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
     String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
-    String[] userID = {"@SiddyDevelops","@MikyDaze","@UncleFifi"};
-    String[] userName = {"Siddharth Singh","Micheal Daze","Joseph Gonzalez"};
-    String[] userSpec = {"Android Developer","Lifestyle Entrepreneur","Financial Advisor"};
-    String[] userProfileIV = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/me_photo.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/michael_daze.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/joseph_gonzalez.jpg"};
+
+    String[] userID = {"@SiddyDevelops","@MikyDaze","@UncleFifi","@tyler_nix","@usman_yousaf"};
+    String[] userName = {"Siddharth Singh","Micheal Daze","Joseph Gonzalez","Tyler Nix","Usman Yousaf"};
+    String[] userSpec = {"Android Developer","Lifestyle Entrepreneur","Financial Advisor","Marketing Salesman","Web Designer"};
+    String[] userProfileIV = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/me_photo.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/michael_daze.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/joseph_gonzalez.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/tyler_nix.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/usman_yousaf.jpg"};
+
+    String[] userIDF = {"@SiddyDevelops","@ali_morshedlou","@ayo_ogunseinde","@ben_den_engelsen","@ben_parker","@christina","@christina_lewis","@luis_villasmil","@roland_cousins"};
+    String[] userNameF = {"Siddharth Singh","Ali Morshedlou","Ayo Ogunseinde","Ben Den Engelsen","Ben Parker","Christina","Christina Lewis","Luis Villasmil","Roland Cousins"};
+    String[] userSpecF = {"Android Developer","UI/UX Designer","Infulencer","Interior Designer","LGTBQ Activist","Nature Lover","Chef","Sportsman","Comics Writer"};
+    String[] userProfileIVF = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/me_photo.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/ali_morshedlou.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/ayo_ogunseinde.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/ben_den_engelsen.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/ben_parker.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/christina.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/christina_lewis.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/luis_villasmil.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/roland_cousins.jpg"};
 
 
     @Nullable
@@ -58,7 +64,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
                 break;
             case "BottomSheetFollowers":
                 bottomSheetHeading.setText(R.string.followers);
-                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec,userProfileIV));
+                profile_rv.setAdapter(new FollRVAdapter(userIDF,userNameF,userSpecF,userProfileIVF));
                 break;
             default:
                 bottomSheetHeading.setText(R.string.app_name);
