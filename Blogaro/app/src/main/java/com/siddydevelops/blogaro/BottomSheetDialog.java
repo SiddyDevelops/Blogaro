@@ -33,7 +33,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
     String[] titles = {"NPM Modules and Activities", "UX Design", "Big Data"};
     String[] subTitles = {"Introduction to NPM and its Use", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?"};
-    String[] blogPostSrc = {"https://www.specbee.com/sites/default/files/inline-images/NPM-01_0.jpg","https://www.designveloper.com/wp-content/uploads/2020/10/UI-UX-BLOG-BANNER-IMAGE.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post03.png"};
+    String[] blogPostSrc = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post01.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post02.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post03.png"};
 
     String[] userID = {"@SiddyDevelops","@MikyDaze","@UncleFifi","@tyler_nix","@usman_yousaf"};
     String[] userName = {"Siddharth Singh","Micheal Daze","Joseph Gonzalez","Tyler Nix","Usman Yousaf"};
