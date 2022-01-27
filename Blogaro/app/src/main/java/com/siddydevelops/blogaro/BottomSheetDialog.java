@@ -31,8 +31,9 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
     RecyclerView profile_rv;
     Context context;
 
-    String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
-    String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
+    String[] titles = {"Android Cold Start and Buffer Screen", "UX Design", "Big Data"};
+    String[] subTitles = {"Android Cold Start and Buffer Screen", "Publishing android libraries to Jitpack with Gradle 7.+", "Top Android UI Libraries"};
+    String[] blogPostSrc = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost1.jpeg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost2.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost3.png"};
 
     String[] userID = {"@SiddyDevelops","@MikyDaze","@UncleFifi","@tyler_nix","@usman_yousaf"};
     String[] userName = {"Siddharth Singh","Micheal Daze","Joseph Gonzalez","Tyler Nix","Usman Yousaf"};
@@ -56,7 +57,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
         switch(Objects.requireNonNull(getTag())) {
             case "BottomSheetPost":
                 bottomSheetHeading.setText(R.string.post);
-                profile_rv.setAdapter(new ProfileRVAdapter(titles, subTitles,0));
+                profile_rv.setAdapter(new ProfileRVAdapter(titles, subTitles,blogPostSrc,0));
                 break;
             case "BottomSheetPostFollowing":
                 bottomSheetHeading.setText(R.string.following);

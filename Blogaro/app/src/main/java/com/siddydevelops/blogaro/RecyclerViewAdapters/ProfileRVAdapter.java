@@ -1,5 +1,6 @@
 package com.siddydevelops.blogaro.RecyclerViewAdapters;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,17 +12,22 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.siddydevelops.blogaro.R;
 
 public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.ProfileViewHolder> {
 
     private String[] titles;
     private String[] subTitles;
+    private String[] blogPostSrc;
     private int CV_LAYOUT;
 
-    public ProfileRVAdapter(String[] titles, String[] subTitles, int CV_LAYOUT) {
+    Context context;
+
+    public ProfileRVAdapter(String[] titles, String[] subTitles, String[] blogPostSrc, int CV_LAYOUT) {
         this.titles = titles;
         this.subTitles = subTitles;
+        this.blogPostSrc = blogPostSrc;
         this.CV_LAYOUT = CV_LAYOUT;
     }
 
@@ -38,6 +44,8 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
         holder.title.setText(titles[position]);
         holder.subTitle.setText(subTitles[position]);
 
+        context = holder.itemView.getContext();
+
         holder.bookmarkIV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +55,8 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
                     view.setActivated(true);
             }
         });
+
+        Glide.with(context).load(blogPostSrc[position]).into(holder.blogPostIV);
 
         if(CV_LAYOUT == 1)
         {
@@ -65,6 +75,7 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
         TextView title;
         TextView subTitle;
         ImageView bookmarkIV;
+        ImageView blogPostIV;
         CardView layoutCV;
 
         public ProfileViewHolder(@NonNull View itemView) {
@@ -73,6 +84,7 @@ public class ProfileRVAdapter extends RecyclerView.Adapter<ProfileRVAdapter.Prof
             title = itemView.findViewById(R.id.title);
             subTitle = itemView.findViewById(R.id.subTitle);
             bookmarkIV = itemView.findViewById(R.id.bookmarkIV);
+            blogPostIV = itemView.findViewById(R.id.blogPostIV);
             layoutCV = itemView.findViewById(R.id.layoutCV);
         }
     }

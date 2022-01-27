@@ -50,6 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/username"
                 android:fontFamily="@font/avenir_std_roman"
                 android:text="@string/siddharth_singh"
                 android:textColor="@color/dark_blue_text"
@@ -58,6 +59,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/blogTime"
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/avenir_std_roman"
                 android:text="@string/_1hr_ago"
@@ -113,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/blogDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
