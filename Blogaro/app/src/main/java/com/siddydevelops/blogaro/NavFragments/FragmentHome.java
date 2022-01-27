@@ -27,6 +27,8 @@ public class FragmentHome extends Fragment {
     String[] topicText = {"Technology","Science","Medicine","Education","News","Sports"};
     String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
     String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
+    String[] blogPostSrc = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost1.jpeg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost2.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost3.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost1.jpeg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost2.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost3.png"};
+
 
     ImageView iv_addBlog;
 
@@ -64,6 +66,6 @@ public class FragmentHome extends Fragment {
         scrollView.setAdapter(new TopicRVAdapter(topicText,scrollView));
 
         blogsRVHome.setLayoutManager(new LinearLayoutManager(context));
-        blogsRVHome.setAdapter(new ProfileRVAdapter(titles, subTitles,1));
+        blogsRVHome.setAdapter(new ProfileRVAdapter(titles, subTitles,blogPostSrc,1));
     }
 }
