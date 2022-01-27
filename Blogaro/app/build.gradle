@@ -49,4 +49,7 @@ dependencies {
     //TagChip
     implementation 'com.hootsuite.android:nachos:1.2.0'
 
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
 }
