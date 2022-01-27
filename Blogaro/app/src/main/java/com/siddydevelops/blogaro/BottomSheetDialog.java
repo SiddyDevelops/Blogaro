@@ -33,9 +33,10 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
     String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
     String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
-    String[] userID = {"@SiddyDevelops","@SiddyDevelops","@SiddyDevelops"};
-    String[] userName = {"Siddharth Singh","Siddharth Singh","Siddharth Singh"};
-    String[] userSpec = {"Android Developer","Android Developer","Android Developer"};
+    String[] userID = {"@SiddyDevelops","@MikyDaze","@UncleFifi"};
+    String[] userName = {"Siddharth Singh","Micheal Daze","Joseph Gonzalez"};
+    String[] userSpec = {"Android Developer","Lifestyle Entrepreneur","Financial Advisor"};
+    String[] userProfileIV = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/me_photo.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/michael_daze.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Profile-Images/joseph_gonzalez.jpg"};
 
 
     @Nullable
@@ -53,11 +54,11 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
                 break;
             case "BottomSheetPostFollowing":
                 bottomSheetHeading.setText(R.string.following);
-                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec));
+                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec,userProfileIV));
                 break;
             case "BottomSheetFollowers":
                 bottomSheetHeading.setText(R.string.followers);
-                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec));
+                profile_rv.setAdapter(new FollRVAdapter(userID,userName,userSpec,userProfileIV));
                 break;
             default:
                 bottomSheetHeading.setText(R.string.app_name);
