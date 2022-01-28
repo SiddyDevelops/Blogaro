@@ -17,9 +17,10 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/topicCover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0.7"
                 android:scaleType="centerCrop"
                 android:src="@drawable/technology_topic"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -33,12 +34,12 @@
                 android:id="@+id/topicText"
                 android:fontFamily="@font/avenir_std_black"
                 android:text="@string/technology"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintBottom_toBottomOf="@+id/topicCover"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/topicCover"
                 app:layout_constraintVertical_bias="0.902" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
