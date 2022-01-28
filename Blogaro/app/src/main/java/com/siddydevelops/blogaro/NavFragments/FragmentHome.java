@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +22,11 @@ import com.yarolegovich.discretescrollview.DiscreteScrollView;
 import com.yarolegovich.discretescrollview.transform.Pivot;
 import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
-public class FragmentHome extends Fragment {
+public class FragmentHome extends Fragment implements TopicRVAdapter.PassContextInterface {
 
     RecyclerView blogsRVHome;
-    String[] topicText = {"Science","Entertainment","Technology","Education","News","Sports"};
+    String[] topicText = {"Science","Movies","Technology","Education","News","Sports"};
+    String[] topiCoverSrc = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Topic-Cover/cover01.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Topic-Cover/cover02.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Topic-Cover/cover03.jpeg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Topic-Cover/cover04.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Topic-Cover/cover05.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Topic-Cover/cover06.jpg"};
     String[] titles = {"Big Data", "UX Design", "Big Data", "UX Design", "Big Data", "UX Design"};
     String[] subTitles = {"Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner","Why Big Data Needs Thick Data?", "Step Design sprint for UX beginner"};
     String[] blogPostSrc = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost1.jpeg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost2.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost3.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost1.jpeg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost2.png","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Blog-Posts/blogpost3.png"};
@@ -38,7 +40,6 @@ public class FragmentHome extends Fragment {
     public FragmentHome() {
         // Required empty public constructor
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -63,9 +64,14 @@ public class FragmentHome extends Fragment {
                 .setPivotX(Pivot.X.CENTER) // CENTER is a default one
                 .setPivotY(Pivot.Y.BOTTOM) // CENTER is a default one
                 .build());
-        scrollView.setAdapter(new TopicRVAdapter(topicText,scrollView));
+        scrollView.setAdapter(new TopicRVAdapter(topicText,topiCoverSrc,scrollView,this));
 
         blogsRVHome.setLayoutManager(new LinearLayoutManager(context));
         blogsRVHome.setAdapter(new ProfileRVAdapter(titles, subTitles,blogPostSrc,1));
+    }
+
+    @Override
+    public void onItemClick(Integer pos) {
+        Log.i("ActivityPosition: ",pos.toString());
     }
 }
