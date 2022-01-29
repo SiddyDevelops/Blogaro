@@ -9,7 +9,7 @@
 <p align="center">
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/LoginScreen.jpg">
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/ReadArticles.jpg">  
-  <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/HomeDash.jpg">
-  <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/NewArticle.jpg">
+  <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/HomeDashGIF.gif">
+  <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/NewArticle1.jpg">
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/Profile.jpg">  
 </p>
