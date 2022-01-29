@@ -70,5 +70,5 @@
     <style name="ChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
         <item name="android:textColor">@color/blue</item>
     </style>
-    
+
 </resources>

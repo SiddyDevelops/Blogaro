@@ -1,14 +1,11 @@
 package com.siddydevelops.blogaro.NavFragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +44,7 @@ public class FragmentAddBlog extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), MainDashboard.class);
                 startActivity(intent);
+                getActivity().finish();
             }
         });
 

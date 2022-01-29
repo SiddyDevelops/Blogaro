@@ -2,27 +2,20 @@ package com.siddydevelops.blogaro;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.Color;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.siddydevelops.blogaro.RecyclerViewAdapters.FollRVAdapter;
 import com.siddydevelops.blogaro.RecyclerViewAdapters.ProfileRVAdapter;
-
 import java.util.Objects;
 
 public class BottomSheetDialog extends BottomSheetDialogFragment {
