@@ -12,7 +12,7 @@
         android:id="@+id/layoutCV"
         app:cardBackgroundColor="#E6EAF1"
         android:elevation="8dp"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="15dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
