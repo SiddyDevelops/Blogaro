@@ -2,10 +2,10 @@
   <img height=200px src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/logo.png" />
 <p/>
 
-# Blogaro
+# 📑 Blogaro
 > Blogaro is an UI-Ready Android App which provides a online article publishing platform. This app allows user to Read, write and publish article on any genre they want. User can either login or signup using Google, Facebook or Twitter accounts or create a new account to access millions of blog written by other users through out the world. This App allows content to be both easily created and consumed, and is strongly influenced by social media in terms of helping the content get distributed (follows, shares, etc.).
 
-## What can you do with Blogaro:
+## 🤔 What can you do with Blogaro:
 <p align="center">
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/LoginScreen.jpg">
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/ReadArticles.jpg">  
@@ -29,7 +29,7 @@
 - From the security settings, allow the external files to make changes and install the App.
 - Run the App.
 
-## From the Developer:
+## 👨‍💻 From the Developer:
 
 This Android App is developed by <a target="_blank" href="https://siddydevelops.github.io/">Siddharth Singh<a/>. The vector-icons and images used while designing this app is taken from various websites. Hence I do not own these icons. Always ready to contribute and Collaborate.  
 Follow my Social Handles for more projects.
