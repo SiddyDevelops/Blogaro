@@ -13,3 +13,10 @@
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/NewArticle1.jpg">
   <img width="160" height="375" src="https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Screenshots/Profile.jpg">  
 </p>
+
+***The main features of the app are:***
+- **Mutiple Entry Ports:** Signup or Login through Google, Facebook or Twitter.
+- **Multi-Genre Domains:** Read articles and blogs from various domains ranging from technology to medicine to movies or sports.
+- **Remember the article:** Bookmark, like, and share articles which influenced you so that it influences others.
+- **Publish with Style:** Add tags and labels to your article so it reaches a wider audience.
+- **Connect and Contribute:** Find writers which share a similar taste as yours, follow them and draw inspiration.  
