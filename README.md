@@ -20,3 +20,11 @@
 - **Remember the article:** Bookmark, like, and share articles which influenced you so that it influences others.
 - **Publish with Style:** Add tags and labels to your article so it reaches a wider audience.
 - **Connect and Contribute:** Find writers which share a similar taste as yours, follow them and draw inspiration.  
+
+## ⬇ Installation
+
+- An android smartphone with AndroidVersion >= 6.0 (Marshmello) will be required to run the app.
+- Create a directory in your computer and clone the repository OR directly download the APK file.
+- Transfer the APK file named ***'Blogaro.apk'*** to your mobile phone and run it.
+- From the security settings, allow the external files to make changes and install the App.
+- Run the App.
