@@ -28,3 +28,9 @@
 - Transfer the APK file named ***'Blogaro.apk'*** to your mobile phone and run it.
 - From the security settings, allow the external files to make changes and install the App.
 - Run the App.
+
+## From the Developer:
+
+This Android App is developed by <a target="_blank" href="https://siddydevelops.github.io/">Siddharth Singh<a/>. The vector-icons and images used while designing this app is taken from various websites. Hence I do not own these icons. Always ready to contribute and Collaborate.  
+Follow my Social Handles for more projects.
+✨ Enjoy Coding!! 🚀
