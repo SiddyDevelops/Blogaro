@@ -31,7 +31,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
     RecyclerView profile_rv;
     Context context;
 
-    String[] titles = {"NPM Modules and Activities", "UX Design", "Big Data"};
+    String[] titles = {"NPM Modules & Activities", "UX Design", "Big Data"};
     String[] subTitles = {"Introduction to NPM and its Use", "Step Design sprint for UX beginner", "Why Big Data Needs Thick Data?"};
     String[] blogPostSrc = {"https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post01.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post02.jpg","https://raw.githubusercontent.com/SiddyDevelops/Blogaro/main/Assets/Buffer-BlogPosts/post03.png"};
 
